@@ -8,7 +8,7 @@ This repository provides a high-performance framework for pricing USD Drop-Back 
 
 ## 🔑 Core Methodology
 - **Stochastic Engine:** 50,000-path Monte-Carlo simulation under Geometric Brownian Motion (GBM) to establish pricing benchmarks.
-- **Vectorized HPC Optimization:** Implementation of a purely tensor-based NumPy execution engine, completely eliminating native Python loops. This architectural upgrade delivers a **13x computational speedup**, dropping data generation time from 20 seconds to 1.5 seconds.
+- **Vectorized HPC Optimization:** Implementation of a purely tensor-based NumPy execution engine, completely eliminating native Python loops. This architectural upgrade delivers a **13x computational speedup**, dropping data generation time from 26 seconds to 2 seconds.
 - **Surrogate Modeling:** A Multi-Layer Perceptron (MLP) trained on the simulation results to learn the complex mapping between market parameters and instrument value.
 - **Computational Efficiency:** The AI surrogate achieves microsecond-level inference latency, providing a massive speedup over traditional simulations while maintaining numerical convergence.
 
